@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#circulo{
+    margin-top: 5rem;
+    border: 4px solid black;
+    border-radius: 100%;
+    height: 15rem;
+    width: 15rem;
+    background-color: blue;
+    display: none;
+}
+#circulo:hover{
+    cursor: pointer;
+}
+#nombreJugador{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#textoTurno{
+    user-select: none;
+    font-size: 1.4rem;
+    display: none;
+}
+#botonEnviar{
+    margin-top: 1rem;
+    border: 2px solid black;
+    height: 2rem;
+    width: 6rem;
+    user-select: none;
+    background-color: aquamarine;
+    font-size: 1.4rem;
+}
+#botonEnviar:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+#inputUsuario{
+    width: 12rem;
+    height: 2rem;
+    font-size: 1.4rem;
+}
