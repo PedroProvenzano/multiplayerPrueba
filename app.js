@@ -22,6 +22,8 @@ io.on('connection', (socket) => {
         socket.broadcast.emit('datoTurno', 'true');
     })
 
+    // Tema esperar usuario
+    socket.broadcast.emit('usuarioConectado', 'Un usuario se conecto');
 
 
     socket.on('disconnect', () => {

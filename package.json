@@ -4,7 +4,7 @@
   "description": "Tateti Cliente Server",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "npm install && node app.js"
   },
   "author": "",
   "license": "ISC",

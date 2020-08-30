@@ -8,6 +8,15 @@ const textoTurno = document.getElementById('textoTurno');
 const botonEnviar = document.getElementById('botonEnviar');
 const inputUsuario = document.getElementById('inputUsuario');
 const nombreJugador = document.getElementById('nombreJugador');
+const esperaUsuario = document.getElementById('esperaUsuario');
+
+// Esperar Usuario
+socket.on('usuarioConectado', msg => {
+    inputUsuario.style.pointerEvents = "auto";
+    botonEnviar.style.pointerEvents = "auto";
+    esperaUsuario.style.color = "green";
+    esperaUsuario.innerText = "Usuario encontrado!";
+})
 
 
 botonEnviar.addEventListener('click', function clicks(){
@@ -47,6 +56,10 @@ socket.on('enviarUsuarios', msg => {
     //console.log(msg);
     jugadorOnline = JSON.parse(msg);
     jugadores.push(jugadorOnline);
+    inputUsuario.style.pointerEvents = "auto";
+    botonEnviar.style.pointerEvents = "auto";
+    esperaUsuario.style.color = "green";
+    esperaUsuario.innerText = "Usuario encontrado!";
 })
 
 let turno = true;

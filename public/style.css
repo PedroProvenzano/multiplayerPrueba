@@ -43,6 +43,13 @@ body {
     user-select: none;
     background-color: aquamarine;
     font-size: 1.4rem;
+
+    /* Por defecto */
+    pointer-events: none;
+}
+#esperaUsuario{
+    margin-top: 1rem;
+    color: red;
 }
 #botonEnviar:hover{
     cursor: pointer;
@@ -52,4 +59,7 @@ body {
     width: 12rem;
     height: 2rem;
     font-size: 1.4rem;
+
+    /* Por defecto */
+    pointer-events: none;
 }
